@@ -23,9 +23,12 @@ const typeDefs = gql`
 
   type Query {
     getMessage: String
+    getName: String
   }
 
   type Mutation {
     createMessage: String
   }
 `;
+
+module.exports = typeDefs;

@@ -6,8 +6,13 @@ const resolvers = {
         getMessage: () => {
             return "Hello Graph QL";
         },
+        getName: () => {
+            return "Thanwar";
+        },
     },
     Mutation: {
        // createMessage: 
       },
   };
+
+module.exports = resolvers;

@@ -4,12 +4,14 @@
   "description": "apollo-server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
   },
   "author": "Thanwar",
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.19.1",
-    "graphql": "^15.4.0"
+    "graphql": "^15.4.0",
+    "nodemon": "^2.0.6"
   }
 }
