@@ -17,7 +17,7 @@ const { ApolloServer, gql } = require('apollo-server');
 
 const typeDefs = gql`
   
-  type createMessageType {
+  type messageType {
     message: String
   }
 
@@ -26,8 +26,12 @@ const typeDefs = gql`
     getName: String
   }
 
+  input messageInput {
+    message: String
+  }
+
   type Mutation {
-    createMessage: String
+    createMessage(input: messageInput): messageType
   }
 `;
 
