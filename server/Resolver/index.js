@@ -12,6 +12,9 @@ const resolvers = {
         getName: () => {
             return "Thanwar";
         },
+        getAllMessages: () => {
+            return [{message:"test", id: "123"},{message:"hello", id: "321"}];
+        },
     },
     Mutation: {
         createMessage: (_,{input})=>{

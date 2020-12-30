@@ -19,11 +19,13 @@ const typeDefs = gql`
   
   type messageType {
     message: String
+    id: ID
   }
 
   type Query {
     getMessage: String
     getName: String
+    getAllMessages: [messageType]
   }
 
   input messageInput {
